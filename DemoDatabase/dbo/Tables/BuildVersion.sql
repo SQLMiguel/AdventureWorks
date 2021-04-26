@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[BuildVersion] (
     [SystemInformationID] TINYINT       IDENTITY (1, 1) NOT NULL,
-    [Database Version]    NVARCHAR (25) NOT NULL,
+    [Database_Version]    NVARCHAR (25) NOT NULL,
     [VersionDate]         DATETIME      NOT NULL,
     [ModifiedDate]        DATETIME      CONSTRAINT [DF_BuildVersion_ModifiedDate] DEFAULT (getdate()) NOT NULL
 );
@@ -15,7 +15,7 @@ EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Primary key
 
 
 GO
-EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Version number of the database in 9.yy.mm.dd.00 format.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'BuildVersion', @level2type = N'COLUMN', @level2name = N'Database Version';
+EXECUTE sp_addextendedproperty @name = N'MS_Description', @value = N'Version number of the database in 9.yy.mm.dd.00 format.', @level0type = N'SCHEMA', @level0name = N'dbo', @level1type = N'TABLE', @level1name = N'BuildVersion', @level2type = N'COLUMN', @level2name = N'Database_Version';
 
 
 GO
