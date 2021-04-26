@@ -51,7 +51,7 @@ BEGIN
             );
 
         -- Pass back the ErrorLogID of the row inserted
-        SET @ErrorLogID = SCOPE_IDENTITY;
+        SET @ErrorLogID = @@IDENTITY;
     END TRY
     BEGIN CATCH
         PRINT 'An error occurred in stored procedure uspLogError: ';

@@ -8,7 +8,6 @@
     [Size]                   NVARCHAR (5)     NULL,
     [Weight]                 DECIMAL (8, 2)   NULL,
     [ProductCategoryID]      INT              NULL,
-    [TestColumn]                varchar(50) NULL,
     [ProductModelID]         INT              NULL,
     [SellStartDate]          DATETIME         NOT NULL,
     [SellEndDate]            DATETIME         NULL,
